@@ -1,0 +1,58 @@
+.footer {
+  padding: 56px 175px 32px;
+  background-color: #3e3e3e;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__text {
+    margin-top: 37px;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 405px;
+
+    &--bold {
+      font-weight: 400;
+    }
+  }
+
+  &__contactBox {
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+
+    &Text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &Link {
+      font-weight: 400;
+      color: $red-color;
+    }
+  }
+}
+
+.contactBox {
+  &__head {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #7e7e7e;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  &__top {
+    padding: 18px 47px 18px 175px;
+    display: flex;
+    justify-content: space-around;
+    background: #525252;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  &__content {
+    padding: 170px 0 110px 175px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    display: inline-block;
+    margin-right: 48px;
+    position: relative;
+  }
+
+  &__info {
+    position: relative;
+    top: 17px;
+  }
+
+  &__heading {
+    color: $text-color;
+    font-size: 110px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: -245px;
+      bottom: -22px;
+      content: "";
+      width: 828px;
+      height: 2px;
+      background-color: $red-color;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    font-size: 36px;
+    position: relative;
+    margin-top: 54px;
+    left: 38px;
+  }
+}
+
+.top {
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.lang {
+  margin: 0 56px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    margin-right: 17px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    color: #686868;
+    text-transform: uppercase;
+
+    &--active {
+      font-weight: bold;
+      color: $red-color;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $red-color;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-bottom: 136px;
+
+  &__map {
+    width: 1090px;
+    height: 90vh;
+  }
+
+  &__list {
+    margin-left: 30px;
+  }
+
+  &__heading {
+    left: -250px;
+    margin-bottom: 52px;
+
+    &::before {
+      width: 120%;
+    }
+  }
+
+  &__item {
+    margin-top: 36px;
+  }
+
+  &__head {
+    color: #7e7e7e;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__icons {
+    margin: 24px 0;
+  }
+}

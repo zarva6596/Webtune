@@ -1,0 +1,47 @@
+.aboutUs {
+  display: flex;
+  align-items: center;
+
+  &__photo {
+    z-index: 2;
+  }
+
+  &__info {
+    width: 827px;
+    position: relative;
+    left: -130px;
+    border: 87px solid #3e3e3e;
+  }
+
+  &__heading {
+    left: -50px;
+    margin-bottom: 5px;
+    margin-top: 128px;
+
+    &::before {
+      width: 120%;
+    }
+  }
+
+  &__text {
+    background-color: $bg-color;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 37px;
+    margin-left: 73px;
+    width: 780px;
+
+    &:first-of-type {
+      padding-top: 47px;
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__button {
+    margin-left: 73px;
+    margin-bottom: 125px;
+  }
+}

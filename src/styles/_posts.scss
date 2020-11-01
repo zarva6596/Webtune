@@ -1,0 +1,75 @@
+.posts {
+  &__headingBlock {
+    position: relative;
+    width: fit-content;
+  }
+
+  &__heading {
+    margin-bottom: 76px;
+  }
+
+  &__more {
+    @include headingMore;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__card {
+    width: 770px;
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.card {
+  &__photoBox {
+    overflow: hidden;
+    max-height: 400px;
+  }
+
+  &__photo {
+    transition: transform 0.5s;
+  }
+
+  &:hover &__photo {
+    transform: scale(1.1);
+  }
+
+  &__info {
+    background-color: #3e3e3e;
+    padding: 48px;
+  }
+
+  &__heading {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+  }
+
+  &__bottomLine {
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details {
+    @include headingMore;
+    text-transform: uppercase;
+    position: relative;
+    left: 48px;
+    bottom: 0;
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 24px;
+    color: #a7a7a7;
+  }
+}

@@ -1,0 +1,21 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 48px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 18px;
+  }
+}
