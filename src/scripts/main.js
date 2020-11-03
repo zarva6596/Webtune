@@ -243,6 +243,10 @@ $(document).ready(function() {
       $(this).parent().parent().removeClass('loaded');
     });
 
+    $(document).on('click', '.mobileMenu__link', function(e) {
+      $(this).parent().parent().parent().removeClass('loaded');
+    });
+
     $(document).on('click', '.top__menu', function(e) {
       e.preventDefault();
       $('.mobileMenu').addClass('loaded');
