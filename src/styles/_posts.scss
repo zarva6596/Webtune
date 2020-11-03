@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $bigMobile) {
   .posts {
     &__heading {
       @include headingMobil;
@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: $averageMobile) {
   .card {
     width: 90vw;
 
@@ -158,7 +158,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: $smallMobile) {
   .posts {
     &__heading {
       @include headingMobilSmall;

@@ -60,7 +60,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: $tablet) {
   .contacts {
     &__map {
       height: 50vh;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $bigMobile) {
   .contacts {
     &__heading {
       @include headingMobil;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: $averageMobile) {
   .contacts {
     flex-direction: column;
 

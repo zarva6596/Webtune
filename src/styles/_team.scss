@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $bigMobile) {
   .team {
     &__heading {
       @include headingMobil;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: $averageMobile) {
   .team {
     &__more {
       @include headingMoreMobil;
@@ -122,7 +122,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: $smallMobile) {
   .team {
     &__heading {
       @include headingMobilSmall;

@@ -68,19 +68,19 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: $averageWidth) {
   .slider {
     margin-left: 100px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $bigMobile) {
   .slider {
     margin-left: 0;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: $smallMobile) {
   .slick {
     &-dots {
       & button {

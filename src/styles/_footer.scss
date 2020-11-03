@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: $tablet) {
   .footer {
     &__top {
       flex-direction: column;
@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $bigMobile) {
   .contactBox {
     width: 400px;
 
@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $averageMobile) {
   .contactBox {
     width: 200px;
   }
