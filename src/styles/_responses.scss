@@ -1,0 +1,62 @@
+.responses {
+  padding-right: 0;
+
+  &__item {
+    margin-right: 30px;
+    padding: 29px 36px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #3e3e3e;
+    max-width: 610px;
+  }
+
+  &__text {
+    font-style: 18px;
+    line-height: 30px;
+    margin-top: 21px;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    color: $red-color;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  &__position {
+    color: #a7a7a7;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .responses {
+    &__heading {
+      @include headingSmall;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .responses {
+    &__heading {
+      @include headingMobil;
+    }
+
+    &__item {
+      width: 90vw;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .responses {
+    &__heading {
+      @include headingMobilSmall;
+    }
+  }
+}

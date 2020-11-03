@@ -1,8 +1,16 @@
-$content-width: 1568px;
-$padding-left: calc((100vw - #{$content-width}) / 2);
-
 $bg-color: #525252;
 $red-color: #d24a43;
 $text-color: #fff;
 
-$padding-left-fullHd: 175px;
+//sections paddings
+
+$paddingMax: 175px;
+$padding1800: 100px;
+$padding1600: 75px;
+$paddingMin: 30px;
+
+//desktop screen size
+
+$maxWidth: 1800px;
+$averageWidth: 1600px;
+$smallWidth: 1400px;

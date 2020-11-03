@@ -2,7 +2,7 @@
   &__top {
     padding: 18px 47px 18px 175px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #525252;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -56,6 +56,15 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  &__menu {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icons/menu.png");
+    background-size: contain;
+    background-position: center;
+    display: none;
+  }
 }
 
 .lang {
@@ -75,6 +84,7 @@
     font-size: 18px;
     color: #686868;
     text-transform: uppercase;
+    transition: all 0.5s;
 
     &--active {
       font-weight: bold;
@@ -84,6 +94,130 @@
     &:hover {
       cursor: pointer;
       color: $red-color;
+    }
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .top {
+    padding: 18px 30px 18px 75px;
+  }
+
+  .lang {
+    margin: 0 40px;
+  }
+
+  .header {
+    &__content {
+      padding-left: 75px;
+    }
+
+    &__image {
+      width: 450px;
+    }
+
+    &__heading {
+
+      &::before {
+        bottom: -9px;
+      }
+    }
+  }
+}
+
+@media (max-width: $smallWidth) {
+  .top {
+    padding-left: 30px;
+  }
+
+  .lang {
+    margin: 0 30px;
+  }
+
+  .header {
+    &__content {
+      padding: 100px 30px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    &__heading {
+      font-size: 90px;
+
+      &::before {
+        bottom: -16px;
+        width: 700px;
+      }
+    }
+
+    &__text {
+      font-size: 30px;
+    }
+
+    &__content {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    &__content {
+      position: relative;
+      top: 90px;
+    }
+  }
+
+  .top {
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+
+    &__menu {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &__logo {
+      width: 200px;
+    }
+
+    &__lang {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__image {
+      width: 80vw;
+      margin-right: 0;
+    }
+
+    &__heading {
+      font-size: 48px;
+
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &__text {
+      left: 0;
+      margin-top: 30px;
     }
   }
 }

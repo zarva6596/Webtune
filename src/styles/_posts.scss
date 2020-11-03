@@ -30,11 +30,12 @@
 .card {
   &__photoBox {
     overflow: hidden;
-    max-height: 400px;
+    height: 400px;
   }
 
   &__photo {
     transition: transform 0.5s;
+    width: 770px;
   }
 
   &:hover &__photo {
@@ -71,5 +72,96 @@
     font-size: 16px;
     line-height: 24px;
     color: #a7a7a7;
+  }
+}
+
+@media (max-width: 1700px) {
+  .posts {
+    &__list {
+      justify-content: center;
+    }
+  }
+
+  .card {
+    width: 600px;
+
+    &__photoBox {
+      width: 600px;
+      height: 310px;
+    }
+
+    &__photo {
+      width: 600px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .posts {
+    &__heading {
+      @include headingSmall;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .posts {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+
+  .card {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .posts {
+    &__heading {
+      @include headingMobil;
+    }
+
+    &__more {
+      @include headingMoreMobil;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .card {
+    width: 90vw;
+
+    &__photoBox {
+      width: 90vw;
+      height: 30vh;
+    }
+
+    &__photo {
+      width: 120vw;
+      object-fit: cover;
+    }
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__info {
+      padding: 10px;
+    }
+
+    &__bottomLine {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .posts {
+    &__heading {
+      @include headingMobilSmall;
+    }
   }
 }

@@ -13,9 +13,55 @@
   }
 
   &__link {
+    position: relative;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
     font-size: 18px;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $red-color;
+
+      &::before {
+        position: absolute;
+        left: -10%;
+        bottom: -15px;
+        content: "";
+        width: 120%;
+        height: 1px;
+        background-color: $red-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .nav {
+    &__item {
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $smallWidth) {
+  .nav {
+    &__item {
+      margin-right: 20px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    display: none;
   }
 }

@@ -1,0 +1,23 @@
+@media (max-width: 1600px) {
+  .customers {
+    &__heading {
+      @include headingSmall;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .customers {
+    &__heading {
+      @include headingMobil;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .customers {
+    &__heading {
+      @include headingMobilSmall;
+    }
+  }
+}

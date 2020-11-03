@@ -1,3 +1,8 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 html,
 body,
 a,
@@ -34,10 +39,10 @@ a {
 }
 
 body {
+  overflow-x: hidden;
   line-height: 1;
   height: 100%;
   background-color: $bg-color;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -46,10 +51,6 @@ h1 {
 
 button {
   font-family: "Gilroy", sans-serif;
-}
-
-html {
-  height: 100%;
 }
 
 strong {

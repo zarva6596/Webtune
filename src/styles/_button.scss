@@ -1,10 +1,19 @@
 .button {
   padding: 15px 30px;
   background-color: $red-color;
-  color: #fff;
+  color: $text-color;
   font-size: 18px;
+  border: 1px solid $red-color;
+  transition: all 0.5s;
 
   &:hover {
     cursor: pointer;
+    color: $red-color;
+    background-color: #fff;
+  }
+
+  &:active {
+    background-color: $red-color;
+    color: $text-color;
   }
 }

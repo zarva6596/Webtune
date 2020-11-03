@@ -5,7 +5,7 @@
 
   &__map {
     width: 1090px;
-    height: 90vh;
+    height: 647px;
   }
 
   &__list {
@@ -39,5 +39,60 @@
 
   &__icons {
     margin: 24px 0;
+  }
+
+  &__link .icon:hover {
+    fill: $red-color;
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .contacts {
+    &__heading {
+      @include headingSmall;
+      margin-left: 0;
+    }
+
+    &__map {
+      margin-left: 100px;
+      height: 90vh;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .contacts {
+    &__map {
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts {
+    &__heading {
+      @include headingMobil;
+      left: -120px;
+    }
+
+    &__item {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .contacts {
+    flex-direction: column;
+
+    &__map {
+      width: 100vw;
+      margin-left: 0;
+    }
+
+    &__heading {
+      left: 0;
+      margin-top: 30px;
+    }
   }
 }

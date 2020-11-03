@@ -24,6 +24,11 @@
   }
 }
 
+@mixin headingSmall {
+  font-size: 72px;
+  margin-left: 100px;
+}
+
 @mixin headingMore {
   position: absolute;
   font-size: 24px;
@@ -67,5 +72,27 @@
       opacity: 100;
       transform: translateX(45px);
     }
+  }
+}
+
+@mixin headingMobil {
+  font-size: 48px;
+  margin-left: 0;
+}
+
+@mixin headingMobilSmall {
+  font-size: 40px;
+}
+
+@mixin headingMoreMobil {
+  left: 0;
+  top: 150%;
+
+  &::before {
+    top: 16px;
+  }
+
+  &::after {
+    top: 13px;
   }
 }

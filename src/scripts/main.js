@@ -190,8 +190,62 @@ window.initMap = function() {
   const marker = new google.maps.Marker({
     position,
     map,
-    icon: 'marker.svg',
+    // eslint-disable-next-line max-len
+    icon: 'https://raw.githubusercontent.com/zarva6596/Webtune/ca3452769a75082286faf70aa91d004d44a2c54e/src/images/icons/map_marker.svg',
   });
 };
 
 document.head.appendChild(script);
+
+$(document).ready(function() {
+  $('.customer__slider').slick({
+    dots: true,
+    slidesToShow: '4',
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: '1600',
+        settings: {
+          slidesToShow: '3',
+        },
+      },
+      {
+        breakpoint: '1100',
+        settings: {
+          slidesToShow: '2',
+        },
+      },
+      {
+        breakpoint: '770',
+        settings: {
+          slidesToShow: '1',
+        },
+      },
+    ],
+  });
+
+  $('.responses__slider').slick({
+    dots: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: '440',
+        settings: {
+          autoplay: true,
+        },
+      },
+    ],
+  });
+
+  $(function() {
+    $(document).on('click', '.mobileMenu__close', function(e) {
+      e.preventDefault();
+      $(this).parent().parent().removeClass('loaded');
+    });
+
+    $(document).on('click', '.top__menu', function(e) {
+      e.preventDefault();
+      $('.mobileMenu').addClass('loaded');
+    });
+  });
+});

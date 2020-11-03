@@ -1,5 +1,4 @@
 .services {
-
   &__heading {
     margin-bottom: 76px;
 
@@ -10,9 +9,9 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 392px);
-    grid-template-rows: repeat(3, 228px);
+    grid-template-columns: repeat(auto-fill, 392px);
     justify-items: center;
+    justify-content: center;
     align-items: center;
   }
 
@@ -63,5 +62,36 @@
     width: calc(100% + 72px);
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .services {
+    &__heading {
+      @include headingSmall;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+    &__heading {
+      @include headingMobil;
+    }
+
+    &__item {
+      height: 230px;
+      min-width: 80vw;
+      border-color: $text-color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .services {
+    &__heading {
+      @include headingMobilSmall;
+    }
   }
 }

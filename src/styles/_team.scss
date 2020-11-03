@@ -29,6 +29,7 @@
   &__list {
     margin-top: 76px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__info {
@@ -59,5 +60,72 @@
 
   &__text {
     margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 1775px) {
+  .team {
+    &__list {
+      justify-content: center;
+    }
+
+    &__card {
+      margin: 16px;
+    }
+  }
+}
+
+@media (max-width: $averageWidth) {
+  .team {
+    &__heading {
+      @include headingSmall;
+    }
+
+    &__photo {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .team {
+    &__heading {
+      @include headingMobil;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .team {
+    &__more {
+      @include headingMoreMobil;
+    }
+
+    &__photo {
+      width: 80vw;
+    }
+
+    &__name {
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__position {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .team {
+    &__heading {
+      @include headingMobilSmall;
+    }
   }
 }
