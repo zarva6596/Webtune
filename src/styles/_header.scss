@@ -226,6 +226,19 @@
   .header {
     max-height: 100vh;
 
+    &__top {
+      padding: 10px;
+    }
+
+    &__logo {
+      height: 30px;
+    }
+
+    &__lang,
+    &__button {
+      display: none;
+    }
+
     &__content {
       padding-top: calc((100vh - 90px - (80vh - 90px)) / 2);
       flex-direction: row;
