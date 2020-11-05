@@ -129,3 +129,31 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .team {
+    @include headingHorizontalBlock;
+
+    &__photo {
+      width: 30vw;
+    }
+
+    &__name {
+      text-align: center;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__position {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__text {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

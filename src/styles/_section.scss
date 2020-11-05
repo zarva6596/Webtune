@@ -26,3 +26,9 @@
     padding-right: $paddingMin;
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .section {
+    padding: $paddingMin;
+  }
+}

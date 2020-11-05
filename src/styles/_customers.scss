@@ -21,3 +21,11 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .customers {
+    &__heading {
+      @include headingMobileHorizontal;
+    }
+  }
+}

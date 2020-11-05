@@ -99,3 +99,9 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .slider {
+    margin-top: 90px;
+  }
+}

@@ -165,3 +165,54 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .posts {
+    @include headingHorizontalBlock;
+
+    &__more {
+      @include headingMore;
+      font-size: 18px;
+      top: 10px;
+    }
+
+    &__list {
+      justify-content: space-around;
+    }
+  }
+
+  .card {
+    width: 40vw;
+
+    &__info {
+      padding: 10px;
+    }
+
+    &__photoBox {
+      width: 40vw;
+      height: 130px;
+    }
+
+    &__photo {
+      width: 40vw;
+    }
+
+    &__heading {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__bottomLine {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__details {
+      font-size: 14px;
+    }
+
+    &__date {
+      font-size: 10px;
+    }
+  }
+}

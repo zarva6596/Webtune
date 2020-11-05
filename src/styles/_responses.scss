@@ -13,7 +13,7 @@
   }
 
   &__text {
-    font-style: 18px;
+    font-size: 18px;
     line-height: 30px;
     margin-top: 21px;
     margin-bottom: 16px;
@@ -57,6 +57,38 @@
   .responses {
     &__heading {
       @include headingMobilSmall;
+    }
+  }
+}
+
+@media (max-height: $horizontalMobileHeight) {
+  .responses {
+    &__item {
+      padding: 10px;
+    }
+
+    &__heading {
+      @include headingMobileHorizontal;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 10px;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__position {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    &__icon {
+      width: 20px;
     }
   }
 }

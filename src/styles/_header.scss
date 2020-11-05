@@ -221,3 +221,34 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .header {
+    max-height: 100vh;
+
+    &__content {
+      padding-top: calc((100vh - 90px - (80vh - 90px)) / 2);
+      flex-direction: row;
+      text-align: left;
+    }
+
+    &__image {
+      max-height: calc(80vh - 90px);
+    }
+
+    &__heading {
+      left: -20px;
+
+      &::before {
+        left: -140px;
+        bottom: -14px;
+        width: calc(100% + 100px);
+      }
+    }
+
+    &__text {
+      left: 0;
+      top: -10px;
+    }
+  }
+}

@@ -128,3 +128,20 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .contactBox {
+    &__head {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    &__icon {
+      height: 18px;
+    }
+  }
+}

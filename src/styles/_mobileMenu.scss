@@ -52,3 +52,17 @@
     left: 0;
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .mobileMenu {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 22px;
+    }
+  }
+}

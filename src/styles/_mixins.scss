@@ -96,3 +96,33 @@
     top: 13px;
   }
 }
+
+@mixin headingMobileHorizontal {
+  position: sticky;
+  font-size: 40px;
+  top: 70px;
+  width: 100vw;
+  line-height: 70px;
+  margin-bottom: 0;
+  background-color: $bg-color;
+
+  &::before {
+    bottom: 0;
+  }
+}
+
+@mixin headingHorizontalBlock {
+  &__heading {
+    font-size: 40px;
+  }
+
+  &__more {
+    font-size: 18px;
+  }
+
+  &__headingBlock {
+    z-index: 1;
+    position: sticky;
+    top: 80px;
+  }
+}

@@ -96,3 +96,24 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .contacts {
+    padding: 10px;
+    flex-direction: column;
+
+    &__map {
+      height: calc(100vh - 100px);
+    }
+
+    &__heading {
+      display: none;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+    }
+  }
+}

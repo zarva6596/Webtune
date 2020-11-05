@@ -175,3 +175,19 @@
     }
   }
 }
+
+@media (max-height: $horizontalMobileHeight) {
+  .aboutUs {
+    &__heading {
+      @include headingMobileHorizontal;
+    }
+
+    &__info {
+      border-width: 30px;
+    }
+
+    &__text {
+      width: 80vw;
+    }
+  }
+}
